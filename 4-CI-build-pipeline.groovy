@@ -13,9 +13,9 @@ pipeline {
     }
     stage('Build Docker Image') {         
       steps{                
-        sh 'docker build -t vinayprakash893/vote:latest vote/'
-        sh 'docker build -t vinayprakash893/result:latest result/' 
-        sh 'docker build -t vinayprakash893/worker:latest worker/'            
+        sh 'docker build -t mruduladocker13/vote:latest vote/'
+        sh 'docker build -t mruduladocker13/result:latest result/' 
+        sh 'docker build -t mruduladocker13/worker:latest worker/'            
         echo 'Build Image Completed'                
       }           
     }
@@ -27,9 +27,9 @@ pipeline {
     }               
     stage('Push Image to Docker Hub') {         
       steps{                            
-        sh 'docker push vinayprakash893/vote:latest'
-        sh 'docker push vinayprakash893/result:latest'
-        sh 'docker push vinayprakash893/worker:latest'
+        sh 'docker push mruduladocker13/vote:latest'
+        sh 'docker push mruduladocker13/result:latest'
+        sh 'docker push mruduladocker13/worker:latest'
         echo 'Push Image Completed'       
       }           
     }      
