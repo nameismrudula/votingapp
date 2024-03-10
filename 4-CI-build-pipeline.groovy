@@ -6,7 +6,8 @@ pipeline {
   stages {         
     stage("Git Checkout"){           
       steps{                
-        git branch: 'main', credentialsId: 'github', url: 'https://github.com/vinayprakash893/docker-voting-aws-ec2-k8s.git'
+      //  git branch: 'main', credentialsId: 'github', url: 'https://github.com/vinayprakash893/docker-voting-aws-ec2-k8s.git'
+        git branch: 'main', credentialsId: 'e3d5a50c-9cef-4db2-906f-a3e5bbae37b3', url: 'https://github.com/nameismrudula/votingapp.git'
         echo 'Git Checkout Completed'            
       }        
     }
